@@ -2,8 +2,11 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"net/http"
+	"os"
 
+	"github.com/gin-gonic/gin"
 	"github.com/shawnmorreau/noshot/pkg/websocket"
 )
 
@@ -31,7 +34,20 @@ func setupRoutes() {
 }
 
 func main() {
+	port := os.Getenv("PORT")
+	if port == "" {
+		log.Fatal("$PORT must be set")
+	}
+	router := gin.New()
+	router.Use(gin.Logger())
+	router.LoadHTMLGlob("templates/*.tmpl.html")
+	router.Static("/static", "static")
+
+	router.GET("/", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "index.tmpl.html", nil)
+	})
+
 	fmt.Println("Esketit yung G")
 	setupRoutes()
-	http.ListenAndServe(":8080", nil)
+	router.Run(":" + port)
 }

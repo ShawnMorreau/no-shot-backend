@@ -1,0 +1,10 @@
+{
+    "name":"No shot card game backend",
+    "description":"Card game to play with friends for fun",
+    "keywords":[
+        "OP",
+        "no-shot",
+        "card-games"
+    ],
+    "repository": "https://github.com/ShawnMorreau/no-shot-backend"
+}
