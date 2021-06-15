@@ -1,0 +1,8 @@
+# github.com/Pallinder/go-randomdata v1.2.0
+## explicit
+github.com/Pallinder/go-randomdata
+# github.com/gorilla/websocket v1.4.2
+## explicit
+github.com/gorilla/websocket
+# golang.org/x/text v0.3.6
+## explicit
