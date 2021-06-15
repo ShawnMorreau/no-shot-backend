@@ -1,0 +1,892 @@
+{
+    "Cards": [
+      {
+        "value": "Thinks they're a Jedi",
+        "inDeck": true
+      },
+      {
+        "value": "Civil War reenactor",
+        "inDeck": true
+      },
+      {
+        "value": "Super super racist",
+        "inDeck": true
+      },
+      {
+        "value": "Sexist",
+        "inDeck": true
+      },
+      {
+        "value": "Really stupid",
+        "inDeck": true
+      },
+      {
+        "value": "Owes the government one million dollars",
+        "inDeck": true
+      },
+      {
+        "value": "Death row inmate",
+        "inDeck": true
+      },
+      {
+        "value": "Zero percent sexually attractive to you",
+        "inDeck": true
+      },
+      {
+        "value": "Thinks you're ugly",
+        "inDeck": true
+      },
+      {
+        "value": "Their pet name for you is 'trash bag'",
+        "inDeck": true
+      },
+      {
+        "value": "Is always covered in ants",
+        "inDeck": true
+      },
+      {
+        "value": "Really really hates children",
+        "inDeck": true
+      },
+      {
+        "value": "Only speaks in horrible puns",
+        "inDeck": true
+      },
+      {
+        "value": "Is a merperson",
+        "inDeck": true
+      },
+      {
+        "value": "Sees the ghost of everyone who has ever died",
+        "inDeck": true
+      },
+      {
+        "value": "Is literally always watching porn",
+        "inDeck": true
+      },
+      {
+        "value": "Is addicted to crack",
+        "inDeck": true
+      },
+      {
+        "value": "Is addicted to prescription drugs",
+        "inDeck": true
+      },
+      {
+        "value": "Is a train wreck",
+        "inDeck": true
+      },
+      {
+        "value": "Backseat driver",
+        "inDeck": true
+      },
+      {
+        "value": "Reads over your shoulder (out loud)",
+        "inDeck": true
+      },
+      {
+        "value": "Is six years old",
+        "inDeck": true
+      },
+      {
+        "value": "Only speaks in sarcasm",
+        "inDeck": true
+      },
+      {
+        "value": "Farts every time they kiss you",
+        "inDeck": true
+      },
+      {
+        "value": "Kicks every animal they see",
+        "inDeck": true
+      },
+      {
+        "value": "Worst-smelling person in the world",
+        "inDeck": true
+      },
+      {
+        "value": "Amateur cannibal",
+        "inDeck": true
+      },
+      {
+        "value": "Dabbles in torture",
+        "inDeck": true
+      },
+      {
+        "value": "Uses the word 'chillax' in every sentence",
+        "inDeck": true
+      },
+      {
+        "value": "Body type: Dumpster",
+        "inDeck": true
+      },
+      {
+        "value": "Has a permanent fedora",
+        "inDeck": true
+      },
+      {
+        "value": "Basic",
+        "inDeck": true
+      },
+      {
+        "value": "Spends every date using dating apps",
+        "inDeck": true
+      },
+      {
+        "value": "Literally can't make decisions",
+        "inDeck": true
+      },
+      {
+        "value": "Has to pee every five minutes for five minutes",
+        "inDeck": true
+      },
+      {
+        "value": "Sold your pets on Craigslist",
+        "inDeck": true
+      },
+      {
+        "value": "Only speaks in yelling",
+        "inDeck": true
+      },
+      {
+        "value": "Doesn't know the difference between your and you're",
+        "inDeck": true
+      },
+      {
+        "value": "Only speaks in business buzzwords",
+        "inDeck": true
+      },
+      {
+        "value": "Eats crayons",
+        "inDeck": true
+      },
+      {
+        "value": "Has a dozen kids from a dozen partners",
+        "inDeck": true
+      },
+      {
+        "value": "Is wanted in every state except Florida / (Because Florida doesn't want them)",
+        "inDeck": true
+      },
+      {
+        "value": "Is a hobbit",
+        "inDeck": true
+      },
+      {
+        "value": "Has nineteen kids and counting",
+        "inDeck": true
+      },
+      {
+        "value": "Is building an ark",
+        "inDeck": true
+      },
+      {
+        "value": "Snorts _____ / Really wants you to try it",
+        "inDeck": true
+      },
+      {
+        "value": "Will only eat if you play airplane with their food",
+        "inDeck": true
+      },
+      {
+        "value": "Literally always on a Segway",
+        "inDeck": true
+      },
+      {
+        "value": "Cries themself to sleep every night",
+        "inDeck": true
+      },
+      {
+        "value": "Takes you to _____ on the first date",
+        "inDeck": true
+      },
+      {
+        "value": "Is Nickelback",
+        "inDeck": true
+      },
+      {
+        "value": "Counts your calories",
+        "inDeck": true
+      },
+      {
+        "value": "Can't keep a job longer than twenty minutes",
+        "inDeck": true
+      },
+      {
+        "value": "Hair is transplanted from cadaver butts",
+        "inDeck": true
+      },
+      {
+        "value": "Looks and smells just like your dad",
+        "inDeck": true
+      },
+      {
+        "value": "Throws up every time they see your face",
+        "inDeck": true
+      },
+      {
+        "value": "Is your clone",
+        "inDeck": true
+      },
+      {
+        "value": "Melts if they get wet",
+        "inDeck": true
+      },
+      {
+        "value": "Yawns every time you start a sentence",
+        "inDeck": true
+      },
+      {
+        "value": "First name is 'Poop'",
+        "inDeck": true
+      },
+      {
+        "value": "College nickname: Puke Crotch",
+        "inDeck": true
+      },
+      {
+        "value": "Still in fourth grade",
+        "inDeck": true
+      },
+      {
+        "value": "Teleports to the North Pole every time they say the word 'love'",
+        "inDeck": true
+      },
+      {
+        "value": "Every time you think about them you dry heave",
+        "inDeck": true
+      },
+      {
+        "value": "Takes you to couples therapy on the first date",
+        "inDeck": true
+      },
+      {
+        "value": "Only speaks in boy band lyrics",
+        "inDeck": true
+      },
+      {
+        "value": "Hits on every server",
+        "inDeck": true
+      },
+      {
+        "value": "Has never spelled a word correctly",
+        "inDeck": true
+      },
+      {
+        "value": "Collects human skulls / Says they're 'practically free!'",
+        "inDeck": true
+      },
+      {
+        "value": "Steals something from every store they enter",
+        "inDeck": true
+      },
+      {
+        "value": "Compulsive liar",
+        "inDeck": true
+      },
+      {
+        "value": "Is eligible for the Make-A-Wish Foundation",
+        "inDeck": true
+      },
+      {
+        "value": "Calls you by exe's name / Every time",
+        "inDeck": true
+      },
+      {
+        "value": "Always wearing a Bluetooth headset",
+        "inDeck": true
+      },
+      {
+        "value": "Is the person you hated the most in high school / and literally hasn't changed",
+        "inDeck": true
+      },
+      {
+        "value": "Posts all of your texts and emails online",
+        "inDeck": true
+      },
+      {
+        "value": "3-foot fingernails",
+        "inDeck": true
+      },
+      {
+        "value": "Keeps asking if your best friend is 'down'",
+        "inDeck": true
+      },
+      {
+        "value": "Only communicates with you via fax",
+        "inDeck": true
+      },
+      {
+        "value": "Only speaks Klingon",
+        "inDeck": true
+      },
+      {
+        "value": "Literally won't stop talking about their mother",
+        "inDeck": true
+      },
+      {
+        "value": "Sleep-puncher",
+        "inDeck": true
+      },
+      {
+        "value": "Has scissor hands",
+        "inDeck": true
+      },
+      {
+        "value": "Describes all food as 'yummy yummers'",
+        "inDeck": true
+      },
+      {
+        "value": "Writes erotic Lassie fan fiction",
+        "inDeck": true
+      },
+      {
+        "value": "Won't allow wi-fi in the house",
+        "inDeck": true
+      },
+      {
+        "value": "Refuses to wash hands",
+        "inDeck": true
+      },
+      {
+        "value": "Celibate",
+        "inDeck": true
+      },
+      {
+        "value": "Has plexiglass cheeks so that you can see inside their mouth",
+        "inDeck": true
+      },
+      {
+        "value": "Responds to everything to say with 'that's what she said'",
+        "inDeck": true
+      },
+      {
+        "value": "Isn't potty trained",
+        "inDeck": true
+      },
+      {
+        "value": "Is a serial killer",
+        "inDeck": true
+      },
+      {
+        "value": "Only speaks in Disney song lyrics",
+        "inDeck": true
+      },
+      {
+        "value": "Still uses a flip phone",
+        "inDeck": true
+      },
+      {
+        "value": "Has two other spouses",
+        "inDeck": true
+      },
+      {
+        "value": "Only eats deep-fried food",
+        "inDeck": true
+      },
+      {
+        "value": "Lives off the grid",
+        "inDeck": true
+      },
+      {
+        "value": "Tries to pay for everything with farm animals",
+        "inDeck": true
+      },
+      {
+        "value": "Never stops playing the ukulele",
+        "inDeck": true
+      },
+      {
+        "value": "Regularly hosts tea parties for dolls",
+        "inDeck": true
+      },
+      {
+        "value": "Is the oldest living person",
+        "inDeck": true
+      },
+      {
+        "value": "Constantly taking selfies",
+        "inDeck": true
+      },
+      {
+        "value": "Has _____ for hands",
+        "inDeck": true
+      },
+      {
+        "value": "Says 'Can you not' while you cry at a funeral",
+        "inDeck": true
+      },
+      {
+        "value": "Adds you as an emergency contact on the first date",
+        "inDeck": true
+      },
+      {
+        "value": "Literally only talks about themselves",
+        "inDeck": true
+      },
+      {
+        "value": "Only responds to texts with k",
+        "inDeck": true
+      },
+      {
+        "value": "Is related to you",
+        "inDeck": true
+      },
+      {
+        "value": "Incapable of all emotion",
+        "inDeck": true
+      },
+      {
+        "value": "Is actually two children stacked on top of each other in a trench coat",
+        "inDeck": true
+      },
+      {
+        "value": "Name drops during dirty talk",
+        "inDeck": true
+      },
+      {
+        "value": "Tells you to calm down after everything you say",
+        "inDeck": true
+      },
+      {
+        "value": "You are allergic to them",
+        "inDeck": true
+      },
+      {
+        "value": "Greets people by sniffing their butts",
+        "inDeck": true
+      },
+      {
+        "value": "Is totally married",
+        "inDeck": true
+      },
+      {
+        "value": "Constantly trying to bang your friends",
+        "inDeck": true
+      },
+      {
+        "value": "Refers to their genitals as their no-no",
+        "inDeck": true
+      },
+      {
+        "value": "Rigged to a time bomb",
+        "inDeck": true
+      },
+      {
+        "value": "Is a zombie",
+        "inDeck": true
+      },
+      {
+        "value": "Conveniently forgets wallet every date night / Always has ID though",
+        "inDeck": true
+      },
+      {
+        "value": "Calls you a '4' to your face",
+        "inDeck": true
+      },
+      {
+        "value": "Steals locks of your hair",
+        "inDeck": true
+      },
+      {
+        "value": "Their kisses taste like poop / and they love kissing",
+        "inDeck": true
+      },
+      {
+        "value": "Repeats your jokes but louder",
+        "inDeck": true
+      },
+      {
+        "value": "Compulsively licks doorknobs",
+        "inDeck": true
+      },
+      {
+        "value": "Physically incapable of asking a question",
+        "inDeck": true
+      },
+      {
+        "value": "Jealous of your pet",
+        "inDeck": true
+      },
+      {
+        "value": "Afraid of sunlight",
+        "inDeck": true
+      },
+      {
+        "value": "Speaks with a constantly changing foreign accent",
+        "inDeck": true
+      },
+      {
+        "value": "Literally always drunk",
+        "inDeck": true
+      },
+      {
+        "value": "Brings ex to first date",
+        "inDeck": true
+      },
+      {
+        "value": "Brings mom to first date",
+        "inDeck": true
+      },
+      {
+        "value": "Burps and blows in your face",
+        "inDeck": true
+      },
+      {
+        "value": "In a band called Genocide Warts",
+        "inDeck": true
+      },
+      {
+        "value": "Literally never stops talking",
+        "inDeck": true
+      },
+      {
+        "value": "Constantly plotting to kill you",
+        "inDeck": true
+      },
+      {
+        "value": "Open mouth kisses their pets",
+        "inDeck": true
+      },
+      {
+        "value": "Immediately tries to kill you with a fork",
+        "inDeck": true
+      },
+      {
+        "value": "Super clingy",
+        "inDeck": true
+      },
+      {
+        "value": "Open mouth kisses their siblings",
+        "inDeck": true
+      },
+      {
+        "value": "Literally won't talk to you if you're part of the wrong Hogwarts house",
+        "inDeck": true
+      },
+      {
+        "value": "Greets you with a headbutt",
+        "inDeck": true
+      },
+      {
+        "value": "Has slept with literally everyone",
+        "inDeck": true
+      },
+      {
+        "value": "Always picking their nose",
+        "inDeck": true
+      },
+      {
+        "value": "Only speaks in hashtags",
+        "inDeck": true
+      },
+      {
+        "value": "Demands to pop all of your zits for you",
+        "inDeck": true
+      },
+      {
+        "value": "Recites all the lines from Titanic in their sleep",
+        "inDeck": true
+      },
+      {
+        "value": "Narrates everything they do out loud",
+        "inDeck": true
+      },
+      {
+        "value": "Puts 'air quotes' around 'every word' they say",
+        "inDeck": true
+      },
+      {
+        "value": "Knocks things out of strangers' hands while walking down the street",
+        "inDeck": true
+      },
+      {
+        "value": "Charges you a quarter every time you say a curse word",
+        "inDeck": true
+      },
+      {
+        "value": "Is dead",
+        "inDeck": true
+      },
+      {
+        "value": "Is literally always naked",
+        "inDeck": true
+      },
+      {
+        "value": "Talks dirty to all of their food",
+        "inDeck": true
+      },
+      {
+        "value": "Has the names of all of their exes tattooed on their face",
+        "inDeck": true
+      },
+      {
+        "value": "Only wears clothing made of human hair",
+        "inDeck": true
+      },
+      {
+        "value": "Wears diapers because it's 'more convenient'",
+        "inDeck": true
+      },
+      {
+        "value": "Can only speak in lines from _____",
+        "inDeck": true
+      },
+      {
+        "value": "Only laughs at their own jokes",
+        "inDeck": true
+      },
+      {
+        "value": "Keeps changing the subject to talk about how not racist they are",
+        "inDeck": true
+      },
+      {
+        "value": "Just got out of prison / but won't tell you what they were in for",
+        "inDeck": true
+      },
+      {
+        "value": "50 Shades of Grey is literally the only book they've read",
+        "inDeck": true
+      },
+      {
+        "value": "Doesn't think women should vote",
+        "inDeck": true
+      },
+      {
+        "value": "Has been stalking you since middle school",
+        "inDeck": true
+      },
+      {
+        "value": "Is 40 years older than they were in their profile picture",
+        "inDeck": true
+      },
+      {
+        "value": "Is a vampire... / Not the sexy kind",
+        "inDeck": true
+      },
+      {
+        "value": "Winks at you after everything they say ;)",
+        "inDeck": true
+      },
+      {
+        "value": "Swears you look exactly like their sister / But says 'that's a good thing'",
+        "inDeck": true
+      },
+      {
+        "value": "Tinders during sex",
+        "inDeck": true
+      },
+      {
+        "value": "Wears a backpack full of _____ during sex",
+        "inDeck": true
+      },
+      {
+        "value": "Men's rights activist",
+        "inDeck": true
+      },
+      {
+        "value": "Is a 60 year old virgin",
+        "inDeck": true
+      },
+      {
+        "value": "Ends every conversation with 'you're dismissed'",
+        "inDeck": true
+      },
+      {
+        "value": "Sells home-made pubic hair wigs",
+        "inDeck": true
+      },
+      {
+        "value": "Still really into Myspace",
+        "inDeck": true
+      },
+      {
+        "value": "Their sex tape with _____ just went viral",
+        "inDeck": true
+      },
+      {
+        "value": "Can only have conversations through puppets",
+        "inDeck": true
+      },
+      {
+        "value": "Always wears a luchador mask",
+        "inDeck": true
+      },
+      {
+        "value": "Has half a beard / Absolutely refuses to shave",
+        "inDeck": true
+      },
+      {
+        "value": "Swears they're eighteen",
+        "inDeck": true
+      },
+      {
+        "value": "Yells 'ear muffs!' whenever they hear a bad word",
+        "inDeck": true
+      },
+      {
+        "value": "Amateur vigilante",
+        "inDeck": true
+      },
+      {
+        "value": "Won't stop juggling",
+        "inDeck": true
+      },
+      {
+        "value": "Resting dumb face",
+        "inDeck": true
+      },
+      {
+        "value": "Keeps talking about their 'hot cousin'",
+        "inDeck": true
+      },
+      {
+        "value": "Talks exclusively in emojis",
+        "inDeck": true
+      },
+      {
+        "value": "Refuses to delete online dating profile",
+        "inDeck": true
+      },
+      {
+        "value": "Always bragging about past sexual conquests",
+        "inDeck": true
+      },
+      {
+        "value": "Can only eat out of someone else's hand",
+        "inDeck": true
+      },
+      {
+        "value": "Uses way way way too much tongue",
+        "inDeck": true
+      },
+      {
+        "value": "Refuses to cover face while sneezing",
+        "inDeck": true
+      },
+      {
+        "value": "Refuses to look up from phone",
+        "inDeck": true
+      },
+      {
+        "value": "Keeps talking about someone who looks just like you / Only better!",
+        "inDeck": true
+      },
+      {
+        "value": "Thinks Twilight deserved an Oscar",
+        "inDeck": true
+      },
+      {
+        "value": "Is afraid of stoplights",
+        "inDeck": true
+      },
+      {
+        "value": "Doesn't understand your jokes",
+        "inDeck": true
+      },
+      {
+        "value": "Doesn't believe in oral sex",
+        "inDeck": true
+      },
+      {
+        "value": "Laughs incessantly during sex",
+        "inDeck": true
+      },
+      {
+        "value": "Is a revenge porn mogul",
+        "inDeck": true
+      },
+      {
+        "value": "Live-tweets your entire date",
+        "inDeck": true
+      },
+      {
+        "value": "Slept with one of your parents / Recently",
+        "inDeck": true
+      },
+      {
+        "value": "For as long as you date them all your friends will hate you",
+        "inDeck": true
+      },
+      {
+        "value": "Always dresses like a clown",
+        "inDeck": true
+      },
+      {
+        "value": "Constantly freestyles / Badly",
+        "inDeck": true
+      },
+      {
+        "value": "Has a _____ fetish",
+        "inDeck": true
+      },
+      {
+        "value": "Only speaks in motivational quotes",
+        "inDeck": true
+      },
+      {
+        "value": "The two halves of their face don't match / Both are attractive but look totally different",
+        "inDeck": true
+      },
+      {
+        "value": "Doesn't know or understand any word that starts with the letter 'D'",
+        "inDeck": true
+      },
+      {
+        "value": "Only has eyes for you / They literally can't see anyone in the world except you",
+        "inDeck": true
+      },
+      {
+        "value": "Has a superpower / It's seeing through people's clothes",
+        "inDeck": true
+      },
+      {
+        "value": "Always takes the joke three steps too far",
+        "inDeck": true
+      },
+      {
+        "value": "Is on every fad diet at the same time",
+        "inDeck": true
+      },
+      {
+        "value": "Calls their pets their children",
+        "inDeck": true
+      },
+      {
+        "value": "Static shocks you every time you touch",
+        "inDeck": true
+      },
+      {
+        "value": "Is allergic to all of your favorite foods",
+        "inDeck": true
+      },
+      {
+        "value": "Says 'like', like all the time",
+        "inDeck": true
+      },
+      {
+        "value": "Literally has the face of a pug",
+        "inDeck": true
+      },
+      {
+        "value": "Begins every sentence with 'actually'",
+        "inDeck": true
+      },
+      {
+        "value": "Lives in a bedroom with eight dudes / Including one named 'Jug'",
+        "inDeck": true
+      },
+      {
+        "value": "Doesn't like music... / any of it",
+        "inDeck": true
+      },
+      {
+        "value": "Thinks they're smarter than you",
+        "inDeck": true
+      },
+      {
+        "value": "As long as you date them you can only eat food off the dollar menu",
+        "inDeck": true
+      }
+    ]
+  }
