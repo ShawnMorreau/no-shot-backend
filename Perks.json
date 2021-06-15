@@ -1,0 +1,692 @@
+{
+    "Cards": [
+      {
+        "value": "Fiercely loyal",
+        "inDeck": true
+      },
+      {
+        "value": "Believes you are the most attractive person they've ever seen",
+        "inDeck": true
+      },
+      {
+        "value": "Trusting",
+        "inDeck": true
+      },
+      {
+        "value": "Respectful",
+        "inDeck": true
+      },
+      {
+        "value": "Honest",
+        "inDeck": true
+      },
+      {
+        "value": "Patient",
+        "inDeck": true
+      },
+      {
+        "value": "Reliable",
+        "inDeck": true
+      },
+      {
+        "value": "Courteous",
+        "inDeck": true
+      },
+      {
+        "value": "Funniest person in the world",
+        "inDeck": true
+      },
+      {
+        "value": "Affectionate",
+        "inDeck": true
+      },
+      {
+        "value": "Good listener",
+        "inDeck": true
+      },
+      {
+        "value": "Supportive",
+        "inDeck": true
+      },
+      {
+        "value": "Generous",
+        "inDeck": true
+      },
+      {
+        "value": "Driven",
+        "inDeck": true
+      },
+      {
+        "value": "Perfect communicator",
+        "inDeck": true
+      },
+      {
+        "value": "Always makes time for you",
+        "inDeck": true
+      },
+      {
+        "value": "Always gives you perfect gifts",
+        "inDeck": true
+      },
+      {
+        "value": "Perfect amount of physical affection",
+        "inDeck": true
+      },
+      {
+        "value": "Adventurous",
+        "inDeck": true
+      },
+      {
+        "value": "Loves you unconditionally",
+        "inDeck": true
+      },
+      {
+        "value": "In touch with their feelings",
+        "inDeck": true
+      },
+      {
+        "value": "Your parents love them",
+        "inDeck": true
+      },
+      {
+        "value": "Your friends and enemies are jealous",
+        "inDeck": true
+      },
+      {
+        "value": "Owns a magic carpet",
+        "inDeck": true
+      },
+      {
+        "value": "Volunteers with elderly people",
+        "inDeck": true
+      },
+      {
+        "value": "Loves dogs",
+        "inDeck": true
+      },
+      {
+        "value": "Loves cats",
+        "inDeck": true
+      },
+      {
+        "value": "Loves theater",
+        "inDeck": true
+      },
+      {
+        "value": "Animal shelter volunteer",
+        "inDeck": true
+      },
+      {
+        "value": "Travels a lot",
+        "inDeck": true
+      },
+      {
+        "value": "Really into wine",
+        "inDeck": true
+      },
+      {
+        "value": "Loves video games",
+        "inDeck": true
+      },
+      {
+        "value": "Has front row tickets to every concert",
+        "inDeck": true
+      },
+      {
+        "value": "Has front row tickets to every sporting event",
+        "inDeck": true
+      },
+      {
+        "value": "Loves sports",
+        "inDeck": true
+      },
+      {
+        "value": "Loves the outdoors",
+        "inDeck": true
+      },
+      {
+        "value": "Loves staying in",
+        "inDeck": true
+      },
+      {
+        "value": "Owns your favorite museum",
+        "inDeck": true
+      },
+      {
+        "value": "Same favorite movies",
+        "inDeck": true
+      },
+      {
+        "value": "Same favorite books",
+        "inDeck": true
+      },
+      {
+        "value": "Same favorite foods",
+        "inDeck": true
+      },
+      {
+        "value": "Same favorite music",
+        "inDeck": true
+      },
+      {
+        "value": "Lives off the grid",
+        "inDeck": true
+      },
+      {
+        "value": "Loves children",
+        "inDeck": true
+      },
+      {
+        "value": "Millionaire",
+        "inDeck": true
+      },
+      {
+        "value": "Most physically attractive person you have ever seen",
+        "inDeck": true
+      },
+      {
+        "value": "Owns a vineyard",
+        "inDeck": true
+      },
+      {
+        "value": "Owns an adorable coffee shop",
+        "inDeck": true
+      },
+      {
+        "value": "Lives on 100 beachfront acres",
+        "inDeck": true
+      },
+      {
+        "value": "Owns a solid gold private jet",
+        "inDeck": true
+      },
+      {
+        "value": "Has a magic bag that contains unlimited cheese",
+        "inDeck": true
+      },
+      {
+        "value": "Owns a 500-foot yacht",
+        "inDeck": true
+      },
+      {
+        "value": "Owns an island in the Bahamas",
+        "inDeck": true
+      },
+      {
+        "value": "Owns one of every car",
+        "inDeck": true
+      },
+      {
+        "value": "Owns 100 horses",
+        "inDeck": true
+      },
+      {
+        "value": "Owns your favorite sports team",
+        "inDeck": true
+      },
+      {
+        "value": "Owns a penthouse suite in your favorite city",
+        "inDeck": true
+      },
+      {
+        "value": "Gives billions to your favorite charity",
+        "inDeck": true
+      },
+      {
+        "value": "Owns a time machine",
+        "inDeck": true
+      },
+      {
+        "value": "Lives in a castle",
+        "inDeck": true
+      },
+      {
+        "value": "Has the best hair ever",
+        "inDeck": true
+      },
+      {
+        "value": "Owns a unicorn",
+        "inDeck": true
+      },
+      {
+        "value": "Genius-level IQ",
+        "inDeck": true
+      },
+      {
+        "value": "Owns a successful startup",
+        "inDeck": true
+      },
+      {
+        "value": "Best sex ever",
+        "inDeck": true
+      },
+      {
+        "value": "Can get you both into literally anywhere",
+        "inDeck": true
+      },
+      {
+        "value": "You'll never have to work while you date them",
+        "inDeck": true
+      },
+      {
+        "value": "You'll never get sick while you date them",
+        "inDeck": true
+      },
+      {
+        "value": "You literally will not age while you date them",
+        "inDeck": true
+      },
+      {
+        "value": "Always smells like _____",
+        "inDeck": true
+      },
+      {
+        "value": "Looks exactly like _____",
+        "inDeck": true
+      },
+      {
+        "value": "Has a mansion in _____",
+        "inDeck": true
+      },
+      {
+        "value": "Speaks every romantic language",
+        "inDeck": true
+      },
+      {
+        "value": "Drives a _____",
+        "inDeck": true
+      },
+      {
+        "value": "Is a professional _____",
+        "inDeck": true
+      },
+      {
+        "value": "Owns a _____",
+        "inDeck": true
+      },
+      {
+        "value": "Knows everything about _____",
+        "inDeck": true
+      },
+      {
+        "value": "Volunteers for _____",
+        "inDeck": true
+      },
+      {
+        "value": "You will never gain weight while you date them",
+        "inDeck": true
+      },
+      {
+        "value": "Has the voice of an angel",
+        "inDeck": true
+      },
+      {
+        "value": "Owns a goose that lays designer clothing",
+        "inDeck": true
+      },
+      {
+        "value": "Has a cellar full of _____",
+        "inDeck": true
+      },
+      {
+        "value": "Professional surfer",
+        "inDeck": true
+      },
+      {
+        "value": "Rocket scientist",
+        "inDeck": true
+      },
+      {
+        "value": "Model",
+        "inDeck": true
+      },
+      {
+        "value": "Professional football player",
+        "inDeck": true
+      },
+      {
+        "value": "Famous artist",
+        "inDeck": true
+      },
+      {
+        "value": "College English professor",
+        "inDeck": true
+      },
+      {
+        "value": "Firefighter",
+        "inDeck": true
+      },
+      {
+        "value": "Astronaut",
+        "inDeck": true
+      },
+      {
+        "value": "President",
+        "inDeck": true
+      },
+      {
+        "value": "Rodeo champion",
+        "inDeck": true
+      },
+      {
+        "value": "Professional wrestler",
+        "inDeck": true
+      },
+      {
+        "value": "Famous movie star",
+        "inDeck": true
+      },
+      {
+        "value": "Famous musician",
+        "inDeck": true
+      },
+      {
+        "value": "Famous rapper",
+        "inDeck": true
+      },
+      {
+        "value": "Porn star",
+        "inDeck": true
+      },
+      {
+        "value": "Supermodel",
+        "inDeck": true
+      },
+      {
+        "value": "Professional chef",
+        "inDeck": true
+      },
+      {
+        "value": "Is never gonna give you up / Let you down / Run around / Or desert you",
+        "inDeck": true
+      },
+      {
+        "value": "World's best hair stylist",
+        "inDeck": true
+      },
+      {
+        "value": "Brain surgeon",
+        "inDeck": true
+      },
+      {
+        "value": "Lawyer",
+        "inDeck": true
+      },
+      {
+        "value": "CEO",
+        "inDeck": true
+      },
+      {
+        "value": "World's best advertising executive",
+        "inDeck": true
+      },
+      {
+        "value": "Airline pilot",
+        "inDeck": true
+      },
+      {
+        "value": "Marine",
+        "inDeck": true
+      },
+      {
+        "value": "Spin instructor",
+        "inDeck": true
+      },
+      {
+        "value": "Bestselling author",
+        "inDeck": true
+      },
+      {
+        "value": "YouTube celebrity",
+        "inDeck": true
+      },
+      {
+        "value": "Lumberjack",
+        "inDeck": true
+      },
+      {
+        "value": "Organic farmer",
+        "inDeck": true
+      },
+      {
+        "value": "Stunt double",
+        "inDeck": true
+      },
+      {
+        "value": "Park ranger",
+        "inDeck": true
+      },
+      {
+        "value": "Ski instructor",
+        "inDeck": true
+      },
+      {
+        "value": "Photographer",
+        "inDeck": true
+      },
+      {
+        "value": "Famous fashion designer",
+        "inDeck": true
+      },
+      {
+        "value": "Is royalty",
+        "inDeck": true
+      },
+      {
+        "value": "Is a genie",
+        "inDeck": true
+      },
+      {
+        "value": "World champion _____",
+        "inDeck": true
+      },
+      {
+        "value": "World champion hunter",
+        "inDeck": true
+      },
+      {
+        "value": "Won the medal of honor",
+        "inDeck": true
+      },
+      {
+        "value": "Was on the news for rescuing a kitten",
+        "inDeck": true
+      },
+      {
+        "value": "Best-smelling person in the world",
+        "inDeck": true
+      },
+      {
+        "value": "Yoga instructor",
+        "inDeck": true
+      },
+      {
+        "value": "The hot barista",
+        "inDeck": true
+      },
+      {
+        "value": "Has an 8-pack",
+        "inDeck": true
+      },
+      {
+        "value": "Olympic gymnast",
+        "inDeck": true
+      },
+      {
+        "value": "Pick an actor/actress",
+        "inDeck": true
+      },
+      {
+        "value": "Never arrives prematurely",
+        "inDeck": true
+      },
+      {
+        "value": "Loves to cuddle",
+        "inDeck": true
+      },
+      {
+        "value": "Is a vampire... / the sexy kind",
+        "inDeck": true
+      },
+      {
+        "value": "Has the most attractive _____ you've ever seen",
+        "inDeck": true
+      },
+      {
+        "value": "The lead singer of your favorite band",
+        "inDeck": true
+      },
+      {
+        "value": "Beautiful eyes",
+        "inDeck": true
+      },
+      {
+        "value": "Completely blind to all of your flaws",
+        "inDeck": true
+      },
+      {
+        "value": "Spontaneous and fun",
+        "inDeck": true
+      },
+      {
+        "value": "Makes you feel secure",
+        "inDeck": true
+      },
+      {
+        "value": "Has the hottest friends",
+        "inDeck": true
+      },
+      {
+        "value": "Has a twin",
+        "inDeck": true
+      },
+      {
+        "value": "Life is the true story that _____ is based on",
+        "inDeck": true
+      },
+      {
+        "value": "Can fly",
+        "inDeck": true
+      },
+      {
+        "value": "Superhero",
+        "inDeck": true
+      },
+      {
+        "value": "Loves to laugh",
+        "inDeck": true
+      },
+      {
+        "value": "Makes scented candles",
+        "inDeck": true
+      },
+      {
+        "value": "Loves the '80s",
+        "inDeck": true
+      },
+      {
+        "value": "Cooks all your favorite foods",
+        "inDeck": true
+      },
+      {
+        "value": "Knows all the words to your favorite children's TV theme songs",
+        "inDeck": true
+      },
+      {
+        "value": "Never blames you for anything",
+        "inDeck": true
+      },
+      {
+        "value": "Can get you free drinks forever at any bar in the world",
+        "inDeck": true
+      },
+      {
+        "value": "Creates shelters for the homeless",
+        "inDeck": true
+      },
+      {
+        "value": "Their kisses cure cancer",
+        "inDeck": true
+      },
+      {
+        "value": "Is a great conversationalist",
+        "inDeck": true
+      },
+      {
+        "value": "Gives the best hugs",
+        "inDeck": true
+      },
+      {
+        "value": "Gives you multiple orgasms",
+        "inDeck": true
+      },
+      {
+        "value": "Is a merperson",
+        "inDeck": true
+      },
+      {
+        "value": "Always knows how to stop you from crying",
+        "inDeck": true
+      },
+      {
+        "value": "Can multiply themselves",
+        "inDeck": true
+      },
+      {
+        "value": "An amazing dancer",
+        "inDeck": true
+      },
+      {
+        "value": "Always defends you",
+        "inDeck": true
+      },
+      {
+        "value": "Can get you a table at any 5-star restaurant any time any place",
+        "inDeck": true
+      },
+      {
+        "value": "Can fire your most hated co-worker or boss",
+        "inDeck": true
+      },
+      {
+        "value": "Their farts smell like flowers",
+        "inDeck": true
+      },
+      {
+        "value": "Never farts",
+        "inDeck": true
+      },
+      {
+        "value": "Their morning breath smells like fresh-baked cookies",
+        "inDeck": true
+      },
+      {
+        "value": "Owns Mars",
+        "inDeck": true
+      },
+      {
+        "value": "Is a night person and a morning person",
+        "inDeck": true
+      },
+      {
+        "value": "Loves their job",
+        "inDeck": true
+      },
+      {
+        "value": "Has all the same hobbies as you",
+        "inDeck": true
+      },
+      {
+        "value": "Can talk to animals",
+        "inDeck": true
+      },
+      {
+        "value": "Owns real dinosaurs",
+        "inDeck": true
+      },
+      {
+        "value": "Gives great massages",
+        "inDeck": true
+      }
+    ]
+  }
