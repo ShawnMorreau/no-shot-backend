@@ -1,1 +1,1 @@
-web: bin/no-shot-backend
+web: bin/backend
