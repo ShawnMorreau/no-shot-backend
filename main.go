@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/shawnmorreau/noshot/pkg/websocket"
 )
@@ -32,7 +33,7 @@ func setupRoutes() {
 
 func main() {
 	setupRoutes()
-
+	port := os.Getenv("PORT")
 	// router := gin.New()
 	// router.Use(gin.Logger())
 	// router.LoadHTMLGlob("templates/*.tmpl.html")
@@ -41,8 +42,8 @@ func main() {
 	// router.GET("/", func(c *gin.Context) {
 	// 	c.HTML(http.StatusOK, "index.tmpl.html", nil)
 	// })
+	// router.Run(":5000")
 
 	fmt.Println("Esketit yung G")
-	// router.Run(":5000")
-	http.ListenAndServe(":5000", nil)
+	http.ListenAndServe(":"+port, nil)
 }
