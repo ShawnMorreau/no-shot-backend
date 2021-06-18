@@ -48,24 +48,31 @@ func (c *Client) Read() {
 		fmt.Printf("message Recieved: %v\n", message)
 	}
 }
-
+func (c *Client) getCards() {
+	if cardsNeeded := MaxOPCards - len(c.WhiteCards); cardsNeeded != 0 {
+		c.WhiteCards = append(c.WhiteCards, getRandomCardsFromDeck(cardsNeeded, OPDeck)...)
+	}
+	if cardsNeeded := MaxNoShotCards - len(c.RedCards); cardsNeeded != 0 {
+		c.RedCards = append(c.RedCards, getRandomCardsFromDeck(cardsNeeded, noShotDeck)...)
+	}
+}
 func (c *Client) removeCards(cards []string, kind string) {
 	if kind == "OP" {
 		for _, card := range cards {
-			c.WhiteCards[c.getIndexOfCard(card, kind)] = c.WhiteCards[len(c.WhiteCards)-1]
+			c.WhiteCards[c.getIndexOfCardInHand(card, kind)] = c.WhiteCards[len(c.WhiteCards)-1]
 			c.WhiteCards[len(c.WhiteCards)-1] = ""
 			c.WhiteCards = c.WhiteCards[:len(c.WhiteCards)-1]
 		}
 	} else {
 		for _, card := range cards {
-			c.RedCards[c.getIndexOfCard(card, kind)] = c.RedCards[len(c.RedCards)-1]
+			c.RedCards[c.getIndexOfCardInHand(card, kind)] = c.RedCards[len(c.RedCards)-1]
 			c.RedCards[len(c.RedCards)-1] = ""
 			c.RedCards = c.RedCards[:len(c.RedCards)-1]
 		}
 	}
 
 }
-func (c *Client) getIndexOfCard(card string, kind string) int {
+func (c *Client) getIndexOfCardInHand(card string, kind string) int {
 	if kind == "OP" {
 		for i, c := range c.WhiteCards {
 			if c == card {

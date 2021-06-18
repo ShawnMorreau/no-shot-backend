@@ -34,22 +34,6 @@ func NewPool() *Pool {
 	}
 }
 
-//this should be separated
-type GameResponse struct {
-	GameStarted   bool
-	Players       []string
-	TurnAndAction playerAndActionRequired
-	Judge         int
-	Type          int
-	Body          string
-	ID            string
-	Host          string
-	MyOpCards     []string
-	MyNoShotCards []string
-	CardsPlayed   []Option
-	Winner        string
-}
-
 func (pool *Pool) getClientFromName(name string) *Client {
 	for client := range pool.Clients {
 		if client.ID == name {
@@ -58,6 +42,7 @@ func (pool *Pool) getClientFromName(name string) *Client {
 	}
 	return nil
 }
+
 func (pool *Pool) removeUserFromPool(user string) {
 	var i int
 	for idx, player := range pool.Players {
@@ -69,18 +54,18 @@ func (pool *Pool) removeUserFromPool(user string) {
 	pool.Players[len(pool.Players)-1] = ""
 	pool.Players = pool.Players[:len(pool.Players)-1]
 }
+
 func (pool *Pool) Start() {
+	go pool.StartPings()
 	for {
 		select {
 		case user := <-pool.Register:
 			pool.Clients[user] = true
-			//Right now host is purely to start the game.
 			if len(pool.Clients) == 1 {
 				pool.Host = user
 			}
 			pool.Players = append(pool.Players, user.ID)
-			poolSize := len(pool.Clients)
-			fmt.Println("Size of connection pool: ", poolSize)
+			fmt.Println("Size of connection pool: ", len(pool.Clients))
 			for client := range pool.Clients {
 				if err := client.Conn.WriteJSON(GameResponse{
 					Players: pool.Players, Host: pool.Host.ID, Type: 2, Body: "User has joined...", ID: user.ID}); err != nil {
@@ -99,59 +84,11 @@ func (pool *Pool) Start() {
 		case message := <-pool.Broadcast:
 			switch message.Body {
 			case "start game":
-				pool.GameStarted = true
-				randJudge := rand.Intn(len(pool.Clients))
-				pool.Judge = randJudge
-				pool.Turn = pool.Judge
-				playerAndAction := pool.getNextPlayerAndTheirRequiredAction()
-				pool.Turn = playerAndAction.Turn
-				initializeDecks()
-				pool.initializeTable()
-				for client := range pool.Clients {
-					client.getCards()
-					if err := client.Conn.WriteJSON(
-						GameResponse{
-							Players:       pool.Players,
-							Host:          pool.Host.ID,
-							Type:          5, //idk why 5 right now... idk if it even needs a type tbh but we'll include it for now
-							Body:          "New Game Starting",
-							Judge:         pool.Judge,
-							TurnAndAction: playerAndAction,
-							MyOpCards:     client.WhiteCards,
-							MyNoShotCards: client.RedCards,
-							GameStarted:   pool.GameStarted,
-							CardsPlayed:   pool.Table,
-						}); err != nil {
-						fmt.Println(err)
-						return
-					}
-				}
+				pool.Judge = rand.Intn(len(pool.Clients))
+				pool.NewRound()
 			case "new round":
 				pool.Judge = nextPlayerToLeft(pool.Judge, len(pool.Players))
-				pool.Turn = pool.Judge
-				playerAndAction := pool.getNextPlayerAndTheirRequiredAction()
-				pool.Turn = playerAndAction.Turn
-				initializeDecks()
-				pool.initializeTable()
-				for client := range pool.Clients {
-					client.getCards()
-					if err := client.Conn.WriteJSON(
-						GameResponse{
-							Players:       pool.Players,
-							Host:          pool.Host.ID,
-							Type:          5, //idk why 5 right now... idk if it even needs a type tbh but we'll include it for now
-							Body:          "New Game Starting",
-							Judge:         pool.Judge,
-							TurnAndAction: playerAndAction,
-							MyOpCards:     client.WhiteCards,
-							MyNoShotCards: client.RedCards,
-							GameStarted:   pool.GameStarted,
-							CardsPlayed:   pool.Table,
-						}); err != nil {
-						fmt.Println(err)
-						return
-					}
-				}
+				pool.NewRound()
 			case "game ended":
 				pool.GameStarted = false
 				for client := range pool.Clients {
@@ -160,79 +97,19 @@ func (pool *Pool) Start() {
 			default:
 				if strings.Contains(message.Body, OP_DELIMITER) {
 					cardsPlayed := strings.Split(message.Body, OP_DELIMITER)
-					player := pool.getClientFromName(message.ID)
-					player.CardsOnTable.WhiteCards = cardsPlayed
-					playerAndAction := pool.getNextPlayerAndTheirRequiredAction()
-					pool.Turn = playerAndAction.Turn
-					player.removeCards(cardsPlayed, "OP")
-					pool.updateTable()
-					for client := range pool.Clients {
-						if err := client.Conn.WriteJSON(
-							GameResponse{
-								Players:       pool.Players,
-								Host:          pool.Host.ID,
-								Type:          5, //idk why 5 right now... idk if it even needs a type tbh but we'll include it for now
-								Body:          "Something Happened",
-								Judge:         pool.Judge,
-								MyOpCards:     client.WhiteCards,
-								MyNoShotCards: client.RedCards,
-								GameStarted:   pool.GameStarted,
-								CardsPlayed:   pool.Table,
-								TurnAndAction: playerAndAction,
-							}); err != nil {
-							fmt.Println(err)
-							return
-						}
-					}
+					pool.updateGameStateAfterCardPlayed(cardsPlayed, "OP")
 
 				} else if strings.Contains(message.Body, NO_SHOT_DELIMITER) {
 					cardsPlayed := strings.Split(message.Body, NO_SHOT_DELIMITER)
-					player := pool.getClientFromName(pool.Players[pool.Turn])
-					player.removeCards(cardsPlayed[:1], "noShot")
-					playerAndAction := pool.getNextPlayerAndTheirRequiredAction()
-					pool.Turn = playerAndAction.Turn
-					//this is the player to the left so we can now set the played Card here.
-					var newPlayer *Client
-					if playerAndAction.FirstToLeft == -1 {
-						newPlayer = pool.getClientFromName(pool.Players[pool.Turn])
-					} else {
-						newPlayer = pool.getClientFromName(pool.Players[playerAndAction.FirstToLeft])
-					}
-					newPlayer.CardsOnTable.RedCard = cardsPlayed[0]
+					pool.updateGameStateAfterCardPlayed(cardsPlayed[:1], "noShot")
 
-					pool.updateTable()
-					for client := range pool.Clients {
-						if err := client.Conn.WriteJSON(
-							GameResponse{
-								Players:       pool.Players,
-								Host:          pool.Host.ID,
-								Type:          5, //idk why 5 right now... idk if it even needs a type tbh but we'll include it for now
-								Body:          "Something Happened",
-								Judge:         pool.Judge,
-								MyOpCards:     client.WhiteCards,
-								MyNoShotCards: client.RedCards,
-								GameStarted:   pool.GameStarted,
-								CardsPlayed:   pool.Table,
-								TurnAndAction: playerAndAction,
-							}); err != nil {
-							fmt.Println(err)
-							return
-						}
-					}
 				} else if strings.Contains(message.Body, WINNER_DELIMITER) {
 					for client := range pool.Clients {
 						if err := client.Conn.WriteJSON(
 							GameResponse{
-								Players:       pool.Players,
-								Host:          pool.Host.ID,
-								Type:          6, //idk why 6 right now... idk if it even needs a type tbh but we'll include it for now
+								Type:          6,
 								Body:          "Host choosing whether we continue or end",
-								Judge:         pool.Judge,
 								TurnAndAction: playerAndActionBuilder(0, "Choose option", -1),
-								MyOpCards:     client.WhiteCards,
-								MyNoShotCards: client.RedCards,
-								GameStarted:   pool.GameStarted,
-								CardsPlayed:   pool.Table,
 								Winner:        strings.Split(message.Body, WINNER_DELIMITER)[0],
 							}); err != nil {
 							fmt.Println(err)

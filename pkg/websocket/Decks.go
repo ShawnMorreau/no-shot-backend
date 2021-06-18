@@ -53,12 +53,3 @@ func getRandomCardsFromDeck(numCards int, deck Deck) []string {
 	}
 	return cards
 }
-
-func (c *Client) getCards() {
-	if cardsNeeded := MaxOPCards - len(c.WhiteCards); cardsNeeded != 0 {
-		c.WhiteCards = append(c.WhiteCards, getRandomCardsFromDeck(cardsNeeded, OPDeck)...)
-	}
-	if cardsNeeded := MaxNoShotCards - len(c.RedCards); cardsNeeded != 0 {
-		c.RedCards = append(c.RedCards, getRandomCardsFromDeck(cardsNeeded, noShotDeck)...)
-	}
-}
