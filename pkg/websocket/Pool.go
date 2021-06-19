@@ -85,9 +85,11 @@ func (pool *Pool) Start() {
 			switch message.Body {
 			case "start game":
 				pool.Judge = rand.Intn(len(pool.Clients))
+				initializeDecks()
 				pool.NewRound()
 			case "new round":
-				pool.Judge = nextPlayerToLeft(pool.Judge, len(pool.Players))
+				pool.Judge = nextPlayerToLeft(pool.Judge, len(pool.Players)-1)
+				fmt.Printf(fmt.Sprintf("Judges value is %v and turn is %v", pool.Judge, pool.Turn) + "\n")
 				pool.NewRound()
 			case "game ended":
 				pool.GameStarted = false

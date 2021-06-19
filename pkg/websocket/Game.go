@@ -56,7 +56,6 @@ func playerAndActionBuilder(player int, action string, nextNext int) playerAndAc
 }
 
 func (pool *Pool) NewRound() {
-	initializeDecks()
 	pool.initializeTable()
 	pool.Turn = pool.Judge
 	playerAndAction := pool.getNextPlayerAndTheirRequiredAction()

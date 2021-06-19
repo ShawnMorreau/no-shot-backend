@@ -50,12 +50,13 @@ func (c *Client) Read() {
 }
 func (c *Client) getCards() {
 	if cardsNeeded := MaxOPCards - len(c.WhiteCards); cardsNeeded != 0 {
-		c.WhiteCards = append(c.WhiteCards, getRandomCardsFromDeck(cardsNeeded, OPDeck)...)
+		c.WhiteCards = append(c.WhiteCards, getRandomCardsFromDeck(cardsNeeded, &OPDeck)...)
 	}
 	if cardsNeeded := MaxNoShotCards - len(c.RedCards); cardsNeeded != 0 {
-		c.RedCards = append(c.RedCards, getRandomCardsFromDeck(cardsNeeded, noShotDeck)...)
+		c.RedCards = append(c.RedCards, getRandomCardsFromDeck(cardsNeeded, &noShotDeck)...)
 	}
 }
+
 func (c *Client) removeCards(cards []string, kind string) {
 	if kind == "OP" {
 		for _, card := range cards {
@@ -70,8 +71,8 @@ func (c *Client) removeCards(cards []string, kind string) {
 			c.RedCards = c.RedCards[:len(c.RedCards)-1]
 		}
 	}
-
 }
+
 func (c *Client) getIndexOfCardInHand(card string, kind string) int {
 	if kind == "OP" {
 		for i, c := range c.WhiteCards {

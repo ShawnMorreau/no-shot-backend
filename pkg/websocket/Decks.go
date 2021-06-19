@@ -5,6 +5,7 @@ import (
 	"log"
 	"math/rand"
 	"os"
+	"time"
 )
 
 var noShotDeck Deck
@@ -14,7 +15,7 @@ const MaxNoShotCards = 3
 const MaxOPCards = 5
 
 type Deck struct {
-	Deck []Card `json:"Cards"`
+	Cards []Card `json:"Cards"`
 }
 
 type Card struct {
@@ -43,13 +44,27 @@ func initializeDecks() {
 		log.Println(err)
 	}
 }
-func getRandomCardsFromDeck(numCards int, deck Deck) []string {
+func getRandomCardsFromDeck(numCards int, deck *Deck) []string {
+	rand.Seed(time.Now().UnixNano())
 	var cards []string
+	if len(deck.Cards) == 0 || len(deck.Cards) < numCards {
+		initializeDecks()
+	}
 	for len(cards) < numCards {
-		if randCard := deck.Deck[rand.Intn(len(deck.Deck))]; randCard.Indeck {
-			randCard.Indeck = false
-			cards = append(cards, randCard.Value)
-		}
+		// if randCard := deck.Cards[rand.Intn(len(deck.Cards))]; randCard.Indeck {
+		// 	randCard.Indeck = false
+		// 	cards = append(cards, randCard.Value)
+		// }
+		randNum := rand.Intn(len(deck.Cards))
+		randCard := deck.Cards[randNum]
+		cards = append(cards, randCard.Value)
+		deck.removeCardFromDeck(randNum)
 	}
 	return cards
+}
+
+func (deck *Deck) removeCardFromDeck(idx int) {
+	copy(deck.Cards[idx:], deck.Cards[idx+1:])
+	deck.Cards[len(deck.Cards)-1] = Card{}
+	deck.Cards = deck.Cards[:len(deck.Cards)-1]
 }

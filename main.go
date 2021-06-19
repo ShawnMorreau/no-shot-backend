@@ -34,15 +34,6 @@ func setupRoutes() {
 func main() {
 	setupRoutes()
 	port := os.Getenv("PORT")
-	// router := gin.New()
-	// router.Use(gin.Logger())
-	// router.LoadHTMLGlob("templates/*.tmpl.html")
-	// router.Static("/static", "static")
-
-	// router.GET("/", func(c *gin.Context) {
-	// 	c.HTML(http.StatusOK, "index.tmpl.html", nil)
-	// })
-	// router.Run(":5000")
+	// http.ListenAndServe(":"+port, nil)
 	http.ListenAndServe(":"+port, nil)
-	// http.ListenAndServe(":5000", nil)
 }
