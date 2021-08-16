@@ -8,7 +8,6 @@ import (
 	"github.com/gorilla/websocket"
 )
 
-//we can probably separate this so a Client has a Hand
 type Client struct {
 	ID           string
 	Conn         *websocket.Conn
@@ -17,6 +16,7 @@ type Client struct {
 	WhiteCards   []string
 	CardsOnTable Option
 	RoundsWon    int
+	Bot          bool
 }
 type Option struct {
 	Player     string
@@ -30,24 +30,6 @@ type Message struct {
 	ID   string
 }
 
-func (c *Client) Read() {
-	c.ID = randomdata.SillyName()
-	defer func() {
-		c.Pool.Unregister <- c
-		c.Conn.Close()
-	}()
-
-	for {
-		messageType, p, err := c.Conn.ReadMessage()
-		if err != nil {
-			log.Println(err)
-			return
-		}
-		message := Message{Type: messageType, Body: string(p), ID: c.ID}
-		c.Pool.Broadcast <- message
-		fmt.Printf("message Recieved: %v\n", message)
-	}
-}
 func (c *Client) getCards() {
 	if cardsNeeded := MaxOPCards - len(c.WhiteCards); cardsNeeded != 0 {
 		c.WhiteCards = append(c.WhiteCards, getRandomCardsFromDeck(cardsNeeded, &OPDeck)...)
@@ -88,4 +70,23 @@ func (c *Client) getIndexOfCardInHand(card string, kind string) int {
 		}
 	}
 	return -1
+}
+
+func (c *Client) Read() {
+	c.ID = randomdata.SillyName()
+	defer func() {
+		c.Pool.Unregister <- c
+		c.Conn.Close()
+	}()
+
+	for {
+		messageType, p, err := c.Conn.ReadMessage()
+		if err != nil {
+			log.Println(err)
+			return
+		}
+		message := Message{Type: messageType, Body: string(p), ID: c.ID}
+		c.Pool.Broadcast <- message
+		fmt.Printf("message Recieved: %v\n", message)
+	}
 }

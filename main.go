@@ -34,6 +34,5 @@ func setupRoutes() {
 func main() {
 	setupRoutes()
 	port := os.Getenv("PORT")
-	// http.ListenAndServe(":"+port, nil)
 	http.ListenAndServe(":"+port, nil)
 }

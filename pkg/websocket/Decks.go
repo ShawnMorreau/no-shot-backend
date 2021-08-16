@@ -51,10 +51,6 @@ func getRandomCardsFromDeck(numCards int, deck *Deck) []string {
 		initializeDecks()
 	}
 	for len(cards) < numCards {
-		// if randCard := deck.Cards[rand.Intn(len(deck.Cards))]; randCard.Indeck {
-		// 	randCard.Indeck = false
-		// 	cards = append(cards, randCard.Value)
-		// }
 		randNum := rand.Intn(len(deck.Cards))
 		randCard := deck.Cards[randNum]
 		cards = append(cards, randCard.Value)
